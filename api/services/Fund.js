@@ -2,7 +2,7 @@
 var file_name = "fund.csv"
 module.exports = {
 
-  getPrice: function(symbols, callback) {
+  getPrice: function(symbols, subtract_day ,callback) {
 
     if (symbols.length <= 0){
       callback(null,null)
@@ -14,29 +14,10 @@ module.exports = {
       var csv = require('fast-csv')
       var file = fs.createWriteStream(file_name);
 
-
+      if (!subtract_day) subtract_day = 0;
       var moment = require('moment');
-      var d;
-      if (moment().format('HH') < 20 ){
-        if (moment().format('dddd') == 'Monday'){
-          d = moment().subtract(3, 'days').add(543,'year').format('DD/MM/YYYY');
-        }
-        else if (moment().format('dddd') == 'Sunday'){
-          d = moment().subtract(2, 'days').add(543,'year').format('DD/MM/YYYY');
-        }else{
-          d = moment().subtract(1, 'days').add(543,'year').format('DD/MM/YYYY');
-        }
-      }
-      else {
-        if (moment().format('dddd') == 'Sunday'){
-          d = moment().subtract(2, 'days').add(543,'year').format('DD/MM/YYYY');
-        }else if (moment().format('dddd') == 'Saturday' || moment().format('dddd') == 'Friday'){
-          d = moment().subtract(1, 'days').add(543,'year').format('DD/MM/YYYY');
-        }else{
-          d = moment().add(543,'year').format('DD/MM/YYYY');
-        }
-      }
-      console.log(d);
+      var d= moment().subtract(subtract_day, 'days').add(543,'year').format('DD/MM/YYYY');
+
       var request = http.get("http://www.thaimutualfund.com/AIMC/aimc_navCenterDownloadRepRep.jsp?date="+d, function(response) {
         var test= response.pipe(file);
       });
@@ -54,7 +35,7 @@ module.exports = {
 
           })
           .on('error', function (err){
-            //callback(null,null)
+            callback(err)
           })
           .on("end", function(){
             callback(null,result)
@@ -62,5 +43,26 @@ module.exports = {
         stream.pipe(csvStream);
       })
     }
+  },
+  getPriceWithRetries: function(symbols,callback){
+    var async = require('async');
+    var count = 0;
+    var limit_retries = 5;
+    async.whilst(
+      function () { return count < limit_retries; },
+      function (callback) {
+
+        Fund.getPrice(symbols, count , function (err, price_list){
+          count++;
+          if (price_list != undefined && (Object.keys(price_list).length == symbols.length)){
+            count = limit_retries;
+          }
+          callback(null, price_list);
+        })
+      },
+      function (err, price_list) {
+        callback(err, price_list)
+      }
+    );
   }
 };

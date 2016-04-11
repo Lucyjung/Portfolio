@@ -38,7 +38,49 @@ module.exports = {
     })
   },
   getPort : function (req, res){
-    Port.getPort(function(err, result){
+
+    var query = {};
+    switch (req.query.filter){
+      case 'gained':
+      case 'loss':
+      case 'inport':
+        query = {volume : {'>' : 0}};
+        break;
+      case 'sold':
+        query = {volume : {'<=' : 0}};
+        break;
+      case 'name':
+        query = {name : req.query.name || null};
+        break;
+      case 'type':
+        query = {type : req.query.type || null};
+        break;
+      default:
+        break;
+    }
+    Port.getPort(query, function(err, result){
+      if (req.query.filter == 'gained' || req.query.filter == 'loss'){
+        var gainedIndexes = [];
+        var lossIndexes = [];
+        result.forEach(function(item, index){
+          if (item.cost <= item.marketValue){
+            gainedIndexes.push(index)
+          }
+          else{
+            lossIndexes.push(index);
+          }
+
+        })
+        if (req.query.filter == 'gained' ){
+          for (var i in lossIndexes){
+            result.splice(lossIndexes[i] - i ,1)
+          }
+        }else{
+          for (var i in gainedIndexes){
+            result.splice(gainedIndexes[i] - i,1)
+          }
+        }
+      }
       return res.json(result);
     })
   },
@@ -242,7 +284,8 @@ module.exports = {
   // required
 
   // TODO : Page Summary
-  // TODO : Search stock, filter
+  // TODO : Search stock
+  // TODO : Back button
 
   // optional
   // TODO : historical graph for port growth (use bloomberg api ? http://www.bloomberg.com/markets/api/bulk-time-series/price/KTB%3ATB?timeFrame=1_YEAR)

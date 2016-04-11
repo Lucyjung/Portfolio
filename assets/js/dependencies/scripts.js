@@ -9,7 +9,7 @@ pageControl('port');
 $("#port,#main,#side-header").click(function(){
   //console.log('click port');
   pageControl('port');
-  updatePortTable();
+  updatePortTable(null);
   updateSummaryTable();
 
 });
@@ -25,14 +25,14 @@ $(".stocklink").click(function(){
 
 // default load and show table
 $('#table-port').ready(function(){
-  updatePortTable();
+  updatePortTable(null);
 })
 $('#table-summary').ready(function(){
   updateSummaryTable();
 })
 
 $('#side-nav-list').ready(function(){
-  createSideNavList(this)
+  updateSideNavList(this)
 });
 
 // button group action type
@@ -59,9 +59,9 @@ $('#modal-container-801726').ready(function(){
     var postData = {}
     getFormData('form-group', postData);
     ajaxPost('action',postData, function(){
-      updatePortTable();
+      updatePortTable(null);
       updateSummaryTable();
-      createSideNavList();
+      updateSideNavList();
       console.log('done')
     });
   })
@@ -71,11 +71,42 @@ $('#model-edit-button').on("click",function(){
   var postData = {};
   getFormData('form-edit-group', postData);
   ajaxPost('history',postData, function(){
-    updatePortTable();
+    updatePortTable(null);
     updateSummaryTable();
-    createSideNavList();
+    updateSideNavList();
   });
 })
+
+$('#side-nav-in-port').on("click",function(){
+  pageControl('port');
+  updatePortTable('filter=inport');
+})
+$('#side-nav-gained').on("click",function(){
+  pageControl('port');
+  updatePortTable('filter=gained');
+})
+$('#side-nav-loss').on("click",function(){
+  pageControl('port');
+  updatePortTable('filter=loss');
+})
+$('#side-nav-sold').on("click",function(){
+  pageControl('port');
+  updatePortTable('filter=sold');
+})
+$('#side-nav-stock').on("click",function(){
+  pageControl('port');
+  updatePortTable('filter=type&type=stock');
+})
+$('#side-nav-fund').on("click",function(){
+  pageControl('port');
+  updatePortTable('filter=type&type=fund');
+})
+$('#side-nav-cash').on("click",function(){
+  pageControl('port');
+  updatePortTable('filter=type&type=cash');
+})
+
+
 
 // socket IO
 
@@ -95,10 +126,74 @@ $(function() {
 
 });
 
+
+// Sorting
+
+var table = $('#table-port');
+
+$('#table-port-index, #table-port-symbol, #table-port-type, #table-port-volume, #table-port-avg-price, #table-port-last-price, #table-port-cost, #table-port-market, #table-port-pl')
+  .wrapInner('<span title="sort this column"/>')
+  .each(function(){
+
+    var th = $(this),
+      thIndex = th.index(),
+      inverse = false;
+
+    th.click(function(){
+
+      table.find('td').filter(function(){
+
+        return $(this).index() === thIndex;
+
+      }).sortElements(function(a, b){
+
+        return $.text([a]) > $.text([b]) ?
+          inverse ? -1 : 1
+          : inverse ? 1 : -1;
+
+      }, function(){
+
+        // parentNode is the element we want to move
+        return this.parentNode;
+
+      });
+
+      inverse = !inverse;
+
+    });
+
+  });
+
+
+// Loading
+var $loading = $('#loadingDiv').hide();
+$(document)
+  .ajaxStart(function () {
+    $loading.show();
+  })
+  .ajaxStop(function () {
+    $loading.hide();
+  });
+
 // General function
 
 function ajaxGet(url, callback){
   $.ajax({
+    xhr: function () {
+      var xhr = new window.XMLHttpRequest();
+      xhr.addEventListener("progress", function (evt) {
+        if (evt.lengthComputable) {
+          var percentComplete = evt.loaded / evt.total * 100;
+          console.log('download');
+          console.log(percentComplete);
+          //$('.progress').css({
+          //  width: percentComplete * 100 + '%'
+          //});
+          $('.progress-bar').css('width', percentComplete+'%').attr('aria-valuenow', percentComplete);
+        }
+      }, false);
+      return xhr;
+    },
     type : "GET",
     url: url
   }).done(function(data){
@@ -117,19 +212,29 @@ function ajaxPost(url, data, callback){
 }
 
 // Table-Port
-function updatePortTable(){
+function updatePortTable(option){
   $('#table-port > tbody').children().each(function(){
     this.remove();
   });
-  ajaxGet('port', function (data){
+  var endPoint = 'port'
+  if (option != null){
+    endPoint += '/?' + option;
+  }
+
+  ajaxGet(endPoint, function (data){
     for ( var i in data){
       var tr = '<tr>'
       var order = parseInt(i)+1;
+      order = order < 10 ? "0"+order : order;
       if (data[i].cost < data[i].marketValue){
         tr = '<tr class="success">'
       } else if (data[i].cost > data[i].marketValue) {
         tr = '<tr class="danger">'
       }
+
+      var percentage = data[i].volume > 0 ? (data[i].lastPrice - data[i].averagedPrice)/data[i].averagedPrice*100:0;
+      percentage = percentage.toFixed(2);
+
       $('#table-port > tbody:last-child').append('' +
         tr +
         '<td>' + order + '</td>' +
@@ -140,9 +245,13 @@ function updatePortTable(){
         '<td>' + data[i].lastPrice + '</td>' +
         '<td>' + data[i].cost + '</td>' +
         '<td>' + data[i].marketValue + '</td>' +
+        '<td>' + percentage + '</td>' +
+        '<td>' + '<span class="glyphicon glyphicon-edit" aria-hidden="true" name=' + data[i].name + '></span>'+ '</td>' +
         '</tr>');
     }
-    initStockEditLink('stocklink');
+    initStockEditLink('glyphicon');
+    initStockLink('stocklink');
+
   })
 }
 
@@ -273,7 +382,8 @@ function initStockEditLink(classname){
   $('.'+classname).click(function(){
     //pageControl('stock')
     //
-    var assetName = $(this).text();
+    //var assetName = $(this).text();
+    var assetName = $(this).attr('name');
     //
     ajaxGet('Asset/?name=' + assetName, function (data){
       $("#modal-container-detail1").modal('show');
@@ -285,26 +395,54 @@ function initStockEditLink(classname){
 }
 
 // Side-nav-list
-function createSideNavList(){
-  $('#side-nav-list').children().each(function(){
-    if (this.id != 'side-header')this.remove();
-  });
+function updateSideNavList(){
+
   ajaxGet('port', function (data){
-    for (var i in data){
-      var percentage = data[i].volume > 0 ? (data[i].lastPrice - data[i].averagedPrice)/data[i].averagedPrice*100:0;
-      percentage = percentage.toFixed(2);
-      $('#side-nav-list').append('' +
-        '<div class="list-group-item">' +
-        '<span class="badge">' +
-        percentage + '%' +
-        '</span>' +
-          '<div class="text-group-item-stock">'+
-            data[i].name +
-          '</div>' +
-        '</div>'
-      )
+
+    var portInfo = {
+      inPort : 0,
+      gained : 0,
+      loss : 0,
+      sold : 0,
+      stock : 0,
+      fund : 0,
+      cash : 0
     }
-    initStockLink("text-group-item-stock");
+    data.forEach(function(item){
+      if (item.volume == 0){
+        portInfo.sold++;
+      }else{
+        portInfo.inPort++;
+        if (item.cost <= item.marketValue){
+          portInfo.gained++;
+        }
+        else{
+          portInfo.loss++;
+        }
+      }
+      switch (item.type.toLowerCase()){
+        case 'stock':
+          portInfo.stock++;
+          break;
+        case 'fund':
+          portInfo.fund++;
+          break;
+        case 'cash' :
+          portInfo.cash++;
+          break;
+        default:
+          break;
+
+      }
+    })
+
+    $('#side-nav-sold').find('.badge').text(portInfo.sold);
+    $('#side-nav-in-port').find('.badge').text(portInfo.inPort);
+    $('#side-nav-gained').find('.badge').text(portInfo.gained);
+    $('#side-nav-loss').find('.badge').text(portInfo.loss);
+    $('#side-nav-stock').find('.badge').text(portInfo.stock);
+    $('#side-nav-fund').find('.badge').text(portInfo.fund);
+    $('#side-nav-cash').find('.badge').text(portInfo.cash);
   })
 }
 function getFormData(className, formData){

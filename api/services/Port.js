@@ -1,7 +1,7 @@
 // Port Service
 module.exports = {
 
-  getPort: function(cb) {
+  getPort: function(query, cb) {
 
     var async = require('async');
     var stockArrayNames = [];
@@ -10,7 +10,7 @@ module.exports = {
     async.waterfall([
       // First
       function (callback){
-        Asset.find().exec(function (err, assetList){
+        Asset.find(query).exec(function (err, assetList){
           for (var i in assetList){
             if (assetList[i].type == "Stock"){
               stockArrayNames.push(assetList[i].name)
@@ -44,7 +44,7 @@ module.exports = {
       },
       // Third
       function (assetList, stockPriceList, callback){
-        Fund.getPrice(fundArrayName, function (err, fundPriceList){
+        Fund.getPriceWithRetries(fundArrayName, function (err, fundPriceList){
           callback(null, assetList, stockPriceList, fundPriceList)
         })
       },
@@ -78,7 +78,7 @@ module.exports = {
       Cash :0,
       Total : 0
     }
-    Port.getPort(function (err, result){
+    Port.getPort(null,function (err, result){
       for(var i in result){
         if (result[i].type == "Stock"){
           summary.Stock += result[i].marketValue
