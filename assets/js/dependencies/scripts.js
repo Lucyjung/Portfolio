@@ -7,7 +7,6 @@ pageControl('port');
 
 // port button
 $("#port,#main,#side-header").click(function(){
-  //console.log('click port');
   pageControl('port');
   updatePortTable(null);
   updateSummaryTable();
@@ -18,10 +17,6 @@ $("#port,#main,#side-header").click(function(){
 $("#cashFlow").click(function(){
   pagePortVisible(false);
 });
-
-$(".stocklink").click(function(){
-  console.log( 'test')
-})
 
 // default load and show table
 $('#table-port').ready(function(){
@@ -62,7 +57,6 @@ $('#modal-container-801726').ready(function(){
       updatePortTable(null);
       updateSummaryTable();
       updateSideNavList();
-      console.log('done')
     });
   })
 })
@@ -184,8 +178,6 @@ function ajaxGet(url, callback){
       xhr.addEventListener("progress", function (evt) {
         if (evt.lengthComputable) {
           var percentComplete = evt.loaded / evt.total * 100;
-          console.log('download');
-          console.log(percentComplete);
           //$('.progress').css({
           //  width: percentComplete * 100 + '%'
           //});
@@ -241,10 +233,10 @@ function updatePortTable(option){
         '<td  class="stocklink"><a href="#">' + data[i].name + '</a></td>' +
         '<td>' + data[i].type + '</td>' +
         '<td>' + data[i].volume + '</td>' +
-        '<td>' + data[i].averagedPrice.toFixed(2) + '</td>' +
-        '<td>' + data[i].lastPrice + '</td>' +
-        '<td>' + data[i].cost + '</td>' +
-        '<td>' + data[i].marketValue + '</td>' +
+        '<td>' + data[i].averagedPrice.formatMoney() + '</td>' +
+        '<td>' + data[i].lastPrice.formatMoney() + '</td>' +
+        '<td>' + data[i].cost.formatMoney() + '</td>' +
+        '<td>' + data[i].marketValue.formatMoney() + '</td>' +
         '<td>' + percentage + '</td>' +
         '<td>' + '<span class="glyphicon glyphicon-edit" aria-hidden="true" name=' + data[i].name + '></span>'+ '</td>' +
         '</tr>');
@@ -275,7 +267,7 @@ function updateSummaryTable(){
         tr +
         '<td>' + (index++)+ '</td>' +
         '<td>' + i + '</td>' +
-        '<td>' + data[i] + '</td>' +
+        '<td>' + data[i].formatMoney() + '</td>' +
         '</tr>');
     }
   })
@@ -296,8 +288,8 @@ function createStockTable(data){
       '<td>' + data.history[i].action + '</td>' +
       '<td>' + data.history[i].volume + '</td>' +
       '<td>' + data.history[i].price + '</td>' +
-      '<td>' + data.history[i].amount + '</td>' +
-      '<td>' + data.history[i].cost + '</td>' +
+      '<td>' + data.history[i].amount.formatMoney() + '</td>' +
+      '<td>' + data.history[i].cost.formatMoney() + '</td>' +
       '<td>' + data.history[i].total_vol + '</td>' +
       '<td>' + data.history[i].avgPrice + '</td>' +
       '</tr>'
@@ -328,7 +320,7 @@ function appendProfitTable(data){
       tr +
       '<td>' + order + '</td>' +
       '<td>' + data.name + '</td>' +
-      '<td>' + data.profit.toFixed(2) + '</td>' +
+      '<td>' + data.profit.formatMoney() + '</td>' +
       '</tr>');
 }
 
@@ -371,7 +363,6 @@ function initStockLink(classname){
     //
 
     var assetName = $(this).text();
-    console.log(assetName)
     ajaxGet('stock/' + assetName, function (data){
       pageControl('stock');
       createStockTable(data);
@@ -465,4 +456,17 @@ function getFormData(className, formData){
     formData[name] = $(this).val();
   });
 }
+
+// Prototype
+
+Number.prototype.formatMoney = function(c, d, t){
+  var n = this,
+    c = isNaN(c = Math.abs(c)) ? 2 : c,
+    d = d == undefined ? "." : d,
+    t = t == undefined ? "," : t,
+    s = n < 0 ? "-" : "",
+    i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "",
+    j = (j = i.length) > 3 ? j % 3 : 0;
+  return s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+};
 

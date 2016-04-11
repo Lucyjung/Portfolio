@@ -58,6 +58,7 @@ module.exports = {
           }else{
             assetList[i].lastPrice = assetList[i].averagedPrice;
           }
+          assetList[i].lastPrice = parseFloat(assetList[i].lastPrice);
           assetList[i].cost = assetList[i].costValue;
           assetList[i].marketValue = assetList[i].volume * assetList[i].lastPrice;
         }
