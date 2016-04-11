@@ -1,0 +1,73 @@
+<table class="table" id="table-port">
+  <thead>
+  <tr>
+    <th>
+      #
+    </th>
+    <th>
+      Symbol
+    </th>
+    <th>
+      Type
+    </th>
+    <th>
+      Volume
+    </th>
+    <th>
+      Avg Price/Share
+    </th>
+    <th>
+      Last Price/Share
+    </th>
+    <th>
+      Cost
+    </th>
+    <th>
+      Market Value
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+
+  </tbody>
+</table>
+<div class="modal fade" id="modal-container-detail1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          ×
+        </button>
+        <h4 class="modal-title" id="myModalLabel">
+          Action
+        </h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-edit-group">
+
+          <div>
+            <label>Asset Name </label> <input type="text" class="form-control" name="asset_name" placeholder="Asset name" value="" id="edit-asset-name" disabled/>
+          </div>
+          <div>
+            Volume <input type="text" class="form-control" name="volume" placeholder="500, 3000, 100000" value="" id="edit-asset-volume"/>
+          </div>
+          <div>
+            Amount <input type="text" class="form-control" name="amount" placeholder=" (Volume * price) - fee" value="" id="edit-asset-amount"/>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="model-edit-button">
+          Submit
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</div>

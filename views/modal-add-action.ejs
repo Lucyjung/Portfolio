@@ -1,0 +1,71 @@
+<a id="modal-801726" href="#modal-container-801726" role="button" class="btn" data-toggle="modal">Add Action</a>
+
+<div class="modal fade" id="modal-container-801726" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          ×
+        </button>
+        <h4 class="modal-title" id="myModalLabel">
+          Action
+        </h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default" id="button_action_type">Buy</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default" id="button_action_type">Sell</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default" id="button_action_type">Dividend</button>
+            </div>
+            <input type="hidden" name="action_type" value="Buy" id="action_type">
+          </div>
+
+          <div class="btn-group btn-group-justified" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default" id="button_asset_type">Stock</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default" id="button_asset_type">Fund</button>
+            </div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default" id="button_asset_type">Cash</button>
+            </div>
+            <input type="hidden" name="asset_type" value="Buy" id="asset_type">
+          </div>
+
+          <div>
+            <label>Asset Name </label> <input type="text" class="form-control" name="asset_name" placeholder="Asset name" value=""/>
+          </div>
+          <div>
+            Volume <input type="text" class="form-control" name="volume" placeholder="500, 3000, 100000" value=""/>
+          </div>
+          <div>
+            Amount <input type="text" class="form-control" name="amount" placeholder=" (Volume * price) - fee" value=""/>
+          </div>
+          <div>
+            Date <input type="text" class="form-control" name="date" placeholder="" value="" id="datepicker"/>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="model-submit">
+          Submit
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
