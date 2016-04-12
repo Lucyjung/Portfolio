@@ -36,6 +36,7 @@ var jsFilesToInject = [
 
   'js/dependencies/jquery.min.js',
   'js/dependencies/bootstrap.min.js',
+  'js/dependencies/d3.min.js',
   'js/dependencies/**/*.js',
   'js/**/*.js'
 ];

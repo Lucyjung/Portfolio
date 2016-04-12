@@ -60,7 +60,10 @@ module.exports.routes = {
   'GET /stock/:name' : 'AssetController.getStock',
   'POST /action': 'AssetController.action',
   'POST /history' : 'AssetController.history',
+  'GET /curSummary' : 'AssetController.getCurrentSummary',
+  'GET /historicalAsset' : 'AssetController.getHistoricalAsset',
+  'GET /portRatio' : 'AssetController.getPortRatio'
 
   // GET profit is handled by Sails Framework
-  'GET /curSummary' : 'ProfitController.getCurrentSummary'
+
 };

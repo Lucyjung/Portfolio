@@ -106,8 +106,8 @@ module.exports = {
             });
             break;
           case 'fund':
-            Fund.getPrice([req.body.asset_name], function (err, current_price){
-              req.body.current_price = current_price;
+            Fund.getPriceWithRetries([req.body.asset_name], function (err, current_price){
+              req.body.current_price = current_price[req.body.asset_name];
               callback (err, asset_info)
             })
             break;
@@ -279,16 +279,27 @@ module.exports = {
     }
   },
 
-
+  getCurrentSummary : function (req, res){
+    Port.getSummary(function(err, summary){
+      return res.json(summary);
+    })
+  },
+  getHistoricalAsset : function (req, res){
+    Stock.getHistoricalPrice(['PTT'], function (err, price_list){
+      return res.json(price_list);
+    })
+  },
+  getPortRatio : function (req, res){
+    Port.getRatio(function (err, ratio){
+      return res.json(ratio);
+    })
+  },
 
   // required
-
-  // TODO : Page Summary
-  // TODO : Search stock
   // TODO : Back button
 
   // optional
-  // TODO : historical graph for port growth (use bloomberg api ? http://www.bloomberg.com/markets/api/bulk-time-series/price/KTB%3ATB?timeFrame=1_YEAR)
+  // TODO : historical graph for port growth (use bloomberg api ? http://www.bloomberg.com/markets/api/bulk-time-series/price/KTB%3ATB?timeFrame=1_YEAR) + http://codepen.io/stefanjudis/pen/gkHwJ
   // TODO : Page cash flow (need to refactor old one)
   // TODO : Autocomplete ? with Suggested volume for dividend
 

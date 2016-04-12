@@ -3,7 +3,7 @@
 
 // init
 
-pageControl('port');
+pageControl('summary');
 
 // port button
 $("#port,#main,#side-header").click(function(){
@@ -100,7 +100,15 @@ $('#side-nav-cash').on("click",function(){
   updatePortTable('filter=type&type=cash');
 })
 
+$('#navbar-search').find('.btn').on("click",function(){
+  pageControl('port');
+  var name = $('#navbar-search').find('.form-control').val();
+  updatePortTable('filter=name&name='+ name.toUpperCase());
+})
 
+$('#main ,#summary').on("click",function(){
+  pageControl('summary');
+})
 
 // socket IO
 
@@ -342,17 +350,32 @@ function pageStockVisible(visible){
   }
 }
 
+// Entire page-summary
+function pageSummaryVisible(visible){
+  if (visible == true){
+    $('#page-summary').show();
+  }else{
+    $('#page-summary').hide();
+  }
+}
+
 // Page control
 function pageControl(mode){
   switch (mode){
     case 'port':
       pagePortVisible(true);
       pageStockVisible(false);
+      pageSummaryVisible(false);
         break;
     case 'stock':
       pagePortVisible(false);
       pageStockVisible(true);
+      pageSummaryVisible(false);
           break;
+    case 'summary':
+      pagePortVisible(false);
+      pageStockVisible(false);
+      pageSummaryVisible(true);
     default:
           break;
   }

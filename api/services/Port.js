@@ -34,13 +34,7 @@ module.exports = {
           }
           callback (null, assetList, stockPriceList)
         })
-        //GoogleStock.getPrice(stockArrayNames, function (err, data){
-        //  var stockPriceList = {};
-        //  for (var i in data){
-        //    stockPriceList[data[i].t] = data[i].l;
-        //  }
-        //  callback (null, assetList, stockPriceList)
-        //});
+
       },
       // Third
       function (assetList, stockPriceList, callback){
@@ -54,7 +48,16 @@ module.exports = {
           if (assetList[i].type == "Stock"){
             assetList[i].lastPrice = stockPriceList[assetList[i].name];
           }else if(assetList[i].type == "Fund") {
-            assetList[i].lastPrice = fundPriceList[assetList[i].name];
+            if (fundPriceList != undefined){
+              assetList[i].lastPrice = fundPriceList[assetList[i].name];
+            }
+            else if (assetList[i].marketPrice != undefined){
+              assetList[i].lastPrice = assetList[i].marketPrice;
+            }
+            else{
+              callback ('Fund data error')
+            }
+
           }else{
             assetList[i].lastPrice = assetList[i].averagedPrice;
           }
@@ -77,7 +80,7 @@ module.exports = {
       Stock : 0,
       Fund : 0,
       Cash :0,
-      Total : 0
+      Total : 0,
     }
     Port.getPort(null,function (err, result){
       for(var i in result){
@@ -91,7 +94,35 @@ module.exports = {
         summary['Total Cost'] += result[i].cost
         summary['Total Market'] += result[i].marketValue
       }
+      summary['Total Margin'] = summary['Total Market'] - summary['Total Cost'];
+      summary['Total'] = summary.Stock + summary.Fund + summary.Cash;
       callback(null, summary);
+    })
+
+  },
+  getRatio : function (callback){
+    var summary = {
+      Stock : 0,
+      Fund : 0,
+      Cash :0,
+    }
+    Port.getPort(null,function (err, result){
+      for(var i in result){
+        if (result[i].type == "Stock"){
+          summary.Stock += result[i].marketValue
+        }else if (result[i].type == "Fund"){
+          summary.Fund += result[i].marketValue
+        }else{
+          summary.Cash += result[i].marketValue
+        }
+      }
+      var total = summary.Stock + summary.Fund + summary.Cash;
+      var ratio = {
+        stock : summary.Stock / total,
+        fund : summary.Fund / total,
+        cash : summary.Cash / total,
+      }
+      callback(null, ratio);
     })
 
   }

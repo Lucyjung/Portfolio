@@ -17,6 +17,19 @@ module.exports = {
 
 
     })
+  },
+  getHistoricalPrice : function (symbol, callback){
+    var request = require('request');
+    var url = 'http://www.bloomberg.com/markets/api/bulk-time-series/price/'+symbol+'%3ATB?timeFrame=YTD';
+    request(url, function (error, response, body) {
+      try {
+        var data = JSON.parse(body);
+        callback(error, data[0].price || null)
+      }catch (e){
+        callback('data error')
+      }
 
+
+    })
   }
 };

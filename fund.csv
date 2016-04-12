@@ -13,7 +13,8 @@
 
 
 
-"CE"," ","KASSET","K-ASSET","กองทุนรวมสิทธิการเช่าอสังหาริมทรัพย์เมเจอร์ ซีนีเพล็กซ์ ไลฟ์สไตล์","Major Cineplex Lifestyle Leasehold Property Fund","MJLF",4008653352.58,12.1474,0.2300000000000,26/11/2013,,
+ไม่พบข้อมูล
+SET","K-ASSET","กองทุนรวมสิทธิการเช่าอสังหาริมทรัพย์เมเจอร์ ซีนีเพล็กซ์ ไลฟ์สไตล์","Major Cineplex Lifestyle Leasehold Property Fund","MJLF",4008653352.58,12.1474,0.2300000000000,26/11/2013,,
 "CE"," ","KASSET","K-ASSET","กองทุนรวมสิทธิการเช่าอสังหาริมทรัพย์โรงแรมและรีสอร์ทในเครือเซ็นทารา","Centara Hotels & Resorts Leasehold Property Fund","CENTARA",3248834281.06,10.1526,0.0430000000000,28/08/2013,,
 "CE"," ","KASSET","K-ASSET","กองทุนรวมสิทธิการเช่าอสังหาริมทรัพย์โกลด์","Gold Property Fund (Lease Hold)","GOLDPF",2269067323.53,11.0148,0.1360000000000,28/08/2013,,
 "CE"," ","KASSET","K-ASSET","กองทุนรวมอสังหาริมทรัพย์เคพีเอ็น","KPN Property Fund","KPNPF",1837953893.38,10.2108,0.1625000000000,26/11/2013,,
@@ -77,6 +78,39 @@
 "OE"," ","ABERDEEN","ABERDEEN","กองทุนเปิด อเบอร์ดีนสยามลีดเดอร์ส","Aberdeen Siam Leaders Fund","ABSL",880967567.12,39.5252,,,39.7229,39.4264
 "OE"," ","ABERDEEN","ABERDEEN","กองทุนเปิด อเบอร์ดีนหุ้นระยะยาว","Aberdeen Long Term Equity Fund","ABLTF",10936424572.75,40.2774,,,40.2775,40.1767
 "OE"," ","ABERDEEN","ABERDEEN","กองทุนเปิด อเบอร์ดีนไทย เอคควิตี้ ดีวิเด็น","Aberdeen Thai Equity Dividend Fund","ABTED",462036235.76,6.9094,0.1300000000000,14/03/2016,6.9786,6.9094
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัส SET50","Asset Plus SET50 Fund","ASP-SET50",25346019.20,16.3568,,,16.3978,16.3568
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสแอ็คทีฟตราสารหนี้ 4","Asset Plus Active Fixed Income Fund 4","ASP-ACFIXED4",283825878.94,12.0718,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอเทิร์มฟันด์ 2Y1","Asset Plus AI Term Fund 2Y1","ASP-AITF2Y1",927155635.83,10.5372,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอเทิร์มฟันด์ 2Y2","Asset Plus AI Term Fund 2Y2","ASP-AITF2Y2",2483565318.71,10.3521,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอเทิร์มฟันด์ 2Y3","Asset Plus AI Term Fund 2Y3","ASP-AITF2Y3",1401461609.87,10.2918,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอเทิร์มฟันด์ 2Y4","Asset Plus AI Term Fund 2Y4","ASP-AITF2Y4",522580844.81,10.2208,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอเทิร์มฟันด์ 2Y5","Asset Plus AI Term Fund 2Y5","ASP-AITF2Y5",590899629.32,10.0337,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอเทิร์มฟันด์ 3Y1","Asset Plus AI Term Fund 3Y1","ASP-AITF3Y1",909323592.00,10.5207,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอเทิร์มฟันด์ 3Y2","Asset Plus AI Term Fund 3Y2","ASP-AITF3Y2",732277731.67,10.3137,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอเทิร์มฟันด์ 5Y1","Asset Plus AI Term Fund 5Y1","ASP-AITF5Y1",420635609.89,10.4717,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอตราสารหนี้ 1","Asset Plus AI Fixed Income Fund 1","ASP-AIF1",2338438364.46,10.8773,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอตราสารหนี้ 10","Asset Plus AI Fixed Income Fund 10","ASP-AIF10",675845675.65,10.3559,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอตราสารหนี้ 11","Asset Plus AI Fixed Income Fund 11","ASP-AIF11",521643958.98,10.0663,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอตราสารหนี้ 2","Asset Plus AI Fixed Income Fund 2","ASP-AIF2",1226791881.34,10.9051,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอตราสารหนี้ 3","Asset Plus AI Fixed Income Fund 3","ASP-AIF3",1100358372.05,10.5600,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอตราสารหนี้ 4","Asset Plus AI Fixed Income Fund 4","ASP-AIF4",1372980307.11,10.5673,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอตราสารหนี้ 5","Asset Plus AI Fixed Income Fund 5","ASP-AIF5",1113394453.08,10.5209,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอตราสารหนี้ 6","Asset Plus AI Fixed Income Fund 6","ASP-AIF6",1166329814.28,10.4717,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอตราสารหนี้ 7","Asset Plus AI Fixed Income Fund 7","ASP-AIF7",1176384022.31,10.4400,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอตราสารหนี้ 8","Asset Plus AI Fixed Income Fund 8","ASP-AIF8",1129761857.13,10.4171,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอไอตราสารหนี้ 9","Asset Plus AI Fixed Income Fund 9","ASP-AIF9",817702956.31,10.4146,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสเอชเอสไอ","Asset Plus HSI","ASP-HSI",47117887.32,11.6582,,,11.6874,11.6582
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสหุ้นระยะยาว","Asset Plus Long-Term Equity Fund","ASP-LTF",267139365.90,15.0083,,,15.0084,15.0083
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสหุ้นระยะยาวทวีกำไร","Asset Plus High Growth LTF","ASP-GLTF",200044296.79,20.7342,,,20.7343,20.7342
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสไพร์ม 4","Asset Plus Prime Fund 4","ASP-PRIME4",71559722.83,7.2619,,,,7.2619
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสไพร์ม 5","Asset Plus Prime Fund 5","ASP-PRIME5",90960031.27,7.8195,,,,7.8195
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสกำไรปันผล","Asset Plus Growth Dividend Fund","ASP-GDF",53351555.79,9.3717,,,9.3718,9.3717
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสตราสารหนี้ 2","Asset Plus Fixed Income Fund 2","ASP2",354846195.04,13.2731,,,13.2732,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสตราสารหนี้ทวีทรัพย์ 2","Asset Plus Taweesab Fixed Income Fund 2","ASP-TFIXED2",128567448.17,11.4583,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสตราสารหนี้ทวีทรัพย์ 3","Asset Plus Taweesab Fixed Income Fund 3","ASP-TFIXED3",439274287.18,11.4663,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสตราสารหนี้ทวีทรัพย์ 7","Asset Plus Taweesab Fixed Income Fund 7","ASP-TFIXED7",81758284.61,12.2639,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสทวีเงินออม 1","Asset Plus Money Management Fund 1","ASP-MMF1",188288123.25,13.6626,,,,
+"OE"," ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสนิคเคอิ 225","Asset Plus Nikkei 225 Fund","ASP-NKY225",47339417.44,8.8625,,,8.9291,8.8625
 "OE"," ","BBLAM","BBLAM","กองทุนรวมคนไทยใจดี","BKIND FUND","BKIND",1578387490.49,9.2982,,,9.2983,9.2053
 "OE"," ","BBLAM","BBLAM","กองทุนรวมบัวหลวงธนสารพลัส 1/16","Bualuang Thanasarn Plus 1/16","BP1/16",2363522976.59,10.0369,,,,
 "OE"," ","BBLAM","BBLAM","กองทุนรวมบัวหลวงธนสารพลัส 10/16","Bualuang Thanasarn Plus 10/16","BP10/16",2093722079.99,10.0100,,,,
@@ -375,6 +409,25 @@
 "OE"," ","LHFUND","","กองทุนเปิด แอล เอช พราวด์","LH PROUD FUND","LHPROUD",252700483.34,9.3331,,,,9.3331
 "OE"," ","LHFUND","","กองทุนเปิด แอล เอช พันธบัตร","LH GOVERNMENT BOND","LHGOV",432584506.07,10.7465,,,10.7466,10.7465
 "OE"," ","LHFUND","","กองทุนเปิด แอล เอช พันธบัตรเพื่อการเลี้ยงชีพ","LH GOVERNMENT BOND RMF","LHGOVRMF",8321755.27,10.4838,,,10.4839,10.4838
+"OE"," ","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ เอเชียน สมอลแคป อิควิตี้ เอฟไอเอฟ","Manulife Strength-Asian Small Cap Equity FIF","MS-ASIAN SM",3435222362.98,14.8195,,,15.0419,14.8195
+"OE"," ","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ เอเชียน สมอลแคป อิควิตี้ เพื่อการเลี้ยงชีพ","Manulife Strength-Asian Small Cap Equity RMF","MS-ASM RMF",36436373.88,8.7706,,,8.7707,8.7706
+"OE"," ","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ เฮลธ์แคร์ เอฟไอเอฟ","Manulife Strength – Healthcare FIF","MS-HCARE",180974880.34,10.6423,,,10.8020,10.6423
+"OE"," ","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ มันนี่ มาร์เก็ต","Manulife Strength-Money Market Fund","MS-MONEY",251903396.63,11.2554,,,11.2555,11.2554
+"OE"," ","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ ยูโรเปี้ยน โกรท เอฟไอเอฟ","Manulife Strength-European Growth FIF","MS-EUROPE",61473710.17,8.7355,,,8.8666,8.7355
+"OE"," ","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ โกลบอล แอสเซ็ท อโลเคชั่น เอฟไอเอฟ","Manulife Strength - Global Asset Allocation FIF","MS-GAA",34224480.80,10.0250,,,10.1755,10.0250
+"OE"," ","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ อเมริกัน โกรท เอฟไอเอฟ","Manulife Strength-American Growth FIF","MS-AMERICAN",28744535.59,15.0366,,,15.2623,15.0366
+"OE"," ","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ อิเมอร์จิ้ง อีสเทอร์น ยุโรป เอฟไอเอฟ","Manulife Strength-Emerging Eastern Europe FIF","MS-EE EURO",63229798.36,5.1308,,,5.2079,5.1308
+"OE"," ","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ อิควิตี้ ปันผล","Manulife Strength-Equity Dividend Fund","MS-EQ DIV",168805855.18,9.5721,,,9.5961,9.5721
+"OE"," ","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ อินเดีย อิควิตี้ เอฟไอเอฟ","Manulife Strength – India Equity FIF","MS-INDIA",317329053.67,9.0755,,,9.2117,9.0755
+"OE"," ","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ ไชน่า แวลู เอฟไอเอฟ","Manulife Strength-China Value Foreign Investment Fund","MS-CHINA VALUE",817871025.71,10.8951,,,11.0586,10.8951
+"OE"," ","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ คอร์ หุ้นระยะยาว","Manulife Strength-Core Long-Term Equity Fund","MS-CORE LTF",417384730.70,27.4428,,,27.4429,27.4428
+"OE"," ","MAYBANK","","กองทุนเปิดเมย์แบงก์ ยูโร อีทีเอฟ","Maybank Euro ETF","MEU",35368004.08,8.4209,,,8.4421,8.3998
+"OE"," ","MAYBANK","","กองทุนเปิดเมย์แบงก์ ยูเอส แอคทีฟ อิควิตี้","Maybank US Active Equity Fund","M-USA",13458078.47,9.6236,,,9.7782,9.6236
+"OE"," ","MAYBANK","","กองทุนเปิดเมย์แบงก์ ยูเอส อีทีเอฟ","Maybank US ETF","MUS",22898423.47,10.4083,,,10.4344,10.3822
+"OE"," ","MAYBANK","","กองทุนเปิดเมย์แบงก์ เจแปน อีทีเอฟ","Maybank Japan ETF","MJP",38489195.20,9.1640,,,9.1870,9.1410
+"OE"," ","MAYBANK","","กองทุนเปิดเมย์แบงก์ อัลติเมท โกลบอล โกรว์ธ","Maybank Ultimate Global Growth Fund","M-UGG",45048182.90,10.6826,,,10.8542,10.6826
+"OE"," ","MAYBANK","","กองทุนเปิดเมย์แบงก์ อีเมอร์จิ้ง  อีทีเอฟ","Maybank Emerging ETF","MEM",30390576.62,8.9384,,,8.9608,8.9160
+"OE"," ","MAYBANK","","กองทุนเปิดเมย์แบงก์ ตลาดเงิน","Maybank Money Market Fund","M-MMF",8344044.74,10.2433,,,10.2434,10.2433
 "OE"," ","MFC","MFC","กองทุนเปิดเอ็มเอฟซี แอคทิฟ อิควิตี้ ฟันด์","MFC Active Equity Fund","M-ACTIVE",41930409.44,14.8874,1.5000000000000,12/02/2015,14.9247,14.8874
 "OE"," ","MFC","MFC","กองทุนเปิดเอ็มเอฟซี มิด สมอล แค็ป","MFC Mid Small Cap Fund","M-MIDSMALL",75747157.21,9.8138,,,9.8384,9.8138
 "OE"," ","MFC","MFC","กองทุนเปิดเอ็มเอฟซี โกลบอล สมาร์ท ฟันด์","MFC Global Smart Fund","MGS",19887575.35,6.6850,0.2500000000000,15/01/2014,6.7185,6.6850
@@ -442,6 +495,8 @@
 "OE"," ","PHATRA ASSET","SCI-ASSET","กองทุนเปิดภัทร เอ็นแฮนซท์ ตราสารหนี้ 6 เดือน13","PHATRA ENHANCED FIXED INCOME 6M13 FUND","PHATRA EFI6M13",191055238.59,10.0234,,,10.0235,10.0234
 "OE"," ","PHATRA ASSET","SCI-ASSET","กองทุนเปิดภัทร เอ็นแฮนซท์ ตราสารหนี้ 6 เดือน14","PHATRA ENHANCED FIXED INCOME 6M14 FUND","PHATRA EFI6M14",347526868.89,10.0109,,,10.0110,10.0109
 "OE"," ","PHATRA ASSET","SCI-ASSET","กองทุนเปิดภัทร มันนี่ โพสิทีฟ","PHATRA MONEY POSITIVE FUND","PHATRA MP",4025843044.50,11.5711,,,11.5712,11.5711
+"OE"," ","PHATRA ASSET","SCI-ASSET","กองทุนเปิดภัทร โกลบอล เฮลธ์แคร์","PHATRA GLOBAL HEALTH CARE FUND","PHATRA GHC",369249822.39,15.8825,,,16.0414,15.8825
+"OE"," ","PHATRA ASSET","SCI-ASSET","กองทุนเปิดภัทร โกลบอล นิว เพอร์สเปกทีฟ","PHATRA GLOBAL NEW PERSPECTIVE FUND","PHATRA GNP",667260467.48,9.4466,,,9.5412,9.4466
 "OE"," ","PHATRA ASSET","SCI-ASSET","กองทุนเปิดภัทร สมาร์ท มินิมั่ม โวลาติลิตี้","PHATRA SMART MINIMUM VOLATILITY FUND","PHATRA SMART MV",205114319.58,9.9468,,,9.9469,9.9468
 "OE"," ","PHATRA ASSET","SCI-ASSET","กองทุนเปิดภัทร หุ้นระยะยาวปันผล","PHATRA LONG TERM EQUITY DIVIDEND FUND","PHATRA LTFD",829761471.66,23.0390,,,23.0391,23.0390
 "OE"," ","PHATRA ASSET","SCI-ASSET","กองทุนเปิดภัทร หุ้นทุนเพื่อการเลี้ยงชีพ","PHATRA EQUITY RETIREMENT MUTUAL FUND","PHATRA EQRMF",143695793.49,31.8260,,,31.8261,31.8260
@@ -465,9 +520,14 @@
 "OE"," ","PAMC","","กองทุนเปิดฟิลลิปตราสารหนี้ เอไอ เทอม 6M1","Phillip Fixed Income Accredited Investors Term Fund 6M1","PFIXAIT6M1",411635759.76,10.1568,,,,
 "OE"," ","PAMC","","กองทุนเปิดฟิลลิปตราสารหนี้เพื่อการเลี้ยงชีพ","PHILLIP FIXED INCOME RETIREMENT MUTUAL FUND","PFIXRMF",11385529.91,11.4672,,,11.4673,11.4672
 "OE"," ","PAMC","","กองทุนเปิดฟิลลิปบริหารเงิน","PHILLIP CASH MANAGEMENT OPEN END FUND","PCASH",893188205.47,11.9601,,,11.9602,11.9601
+"OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ เอเชียน อีเมอร์จิ้ง มาร์เก็ต ฟันด์","SCB ASIAN EMERGING MARKETS OPEN END FUND","SCBAEM",171363374.54,8.9618,,,9.0578,8.9618
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ เอ็นแฮนซท์ โน้ตต่างประเทศ 1Y3","SCB ENHANCED FOREIGN NOTE FUND 1Y3","SCBEFN1Y3",2676143392.73,10.0259,,,,
+"OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ โกลบอล อินฟราสตรัคเจอร์ อิควิตี้","SCB GLOBAL INFRASTRUCTURE EQUITY FUND","SCBGIF",539898213.02,10.0285,,,10.1896,10.0285
+"OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ โกลบอลอินคัมพลัส","SCB GLOBAL INCOME PLUS FUND","SCBGPLUS",4026924755.85,10.3479,,,10.5141,10.3479
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ เซ็ท อินเด็กซ์ ฟันด์","SCB SET INDEX FUND","SCBSET",6286084053.40,16.3594,,,16.3595,16.3594
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ สมาร์ท เทรด 555 ฟันด์ เอ","SCB SMART TRADE 555 FUND A","SCBST555A",420774793.53,10.2205,,,,
+"OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ หุ้นยุโรป เพื่อการเลี้ยงชีพ","SCB EUROPEAN EQUITY RMF","SCBRMEU",6671466.63,8.8302,,,8.8303,8.8302
+"OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ หุ้นอินเดีย","SCB INDIA EQUITY FUND","SCBINDIA",638017042.99,8.9580,,,9.0105,8.9535
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ หุ้นจีนเอแชร์","SCB CHINA A-SHARES FUND","SCBCHA",815591714.51,9.1056,,,9.2104,9.0983
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ หุ้นญี่ปุ่น เพื่อการเลี้ยงชีพ","SCB JAPAN EQUITY RMF","SCBRMJP",13538516.59,8.1837,,,8.1838,8.1837
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ อินคัมพลัส","SCB INCOME PLUS FUND","SCBPLUS",9951372053.07,10.0409,,,10.0947,
@@ -477,6 +537,7 @@
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ SET50 INDEX เพื่อการเลี้ยงชีพ","SCB SET50 INDEX RMF","SCBRMS50",891036452.19,13.8818,,,13.8819,13.8818
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ ซีเล็คท์ อิควิตี้ ฟันด์","SCB SELECTS EQUITY FUND","SCBSE",985602077.43,10.7718,0.1000000000000,09/02/2016,10.8872,10.7718
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ ตราสารหนี้ระยะสั้นต่างประเทศ","SCB FOREIGN SHORT TERM FIXED INCOME","SCBFST",687573483.67,9.7882,,,9.8407,9.7882
+"OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ บิลเลียนแนร์","SCB BILLIONAIRE FUND","SCBBLN",1322906247.66,9.2161,,,9.3715,9.2087
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ พันธบัตรรัฐบาลไทยทริกเกอร์ 1","SCB GOVERNMENT BOND TRIGGER FUND 1","SCBTGGB1",65090504.02,11.1478,,,,11.1478
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์มั่นคง","SCB MUNKHONG OPEN END FUND","SCBMF",239831637.71,15.5639,1.0000000000000,10/09/1996,15.6473,15.5639
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์มั่นคง 2","SCB MUNKHONG 2 OPEN END FUND","SCBMF2",233189029.35,10.2776,0.5000000000000,10/09/1996,10.3327,10.2776
@@ -484,6 +545,7 @@
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์มั่นคง 4","SCB MUNKHONG 4 OPEN END FUND","SCBMF4",281546772.70,8.1624,1.0000000000000,10/03/1995,8.2062,8.1624
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์มั่นคง 5","SCB MUNKHONG 5 OPEN END FUND","SCBMF5",85598897.07,6.9901,0.5000000000000,10/03/1995,7.0276,6.9901
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์เกษียณสุข (ตราสารหนี้)","SCB RETIREMENT FIXED INCOME OPEN END FUND","SCBRF",354613799.88,19.2307,,,19.2308,
+"OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์โกลบอลอินฟราสตรัคเจอร์ เพื่อการเลี้ยงชีพ","SCB GLOBAL INFRASTRUCTURE  RMF","SCBRMGIF",29954771.99,9.8867,,,9.8868,9.8867
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์เพิ่มผลมั่นคง","SCB PERMPOL MUNKHONG OPEN END FUND","SCBPMO",37390135.61,8.7663,1.0000000000000,08/10/2014,8.8602,8.7663
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์สะสมทรัพย์ตราสารหนี้","SCB SAVINGS FIXED INCOME OPEN END FUND","SCBSFF",139293851454.14,20.1688,,,20.1689,20.1688
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์สะสมทรัพย์ตราสารหนี้ พลัส","SCB SPECIFIC FIXED INCOME  PLUS OPEN END FUND","SCBSFFPLUS",21108191597.17,10.5240,,,10.5241,10.5240
@@ -493,6 +555,9 @@
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์หุ้นระยะยาวอินเตอร์","SCB INTER LONG TERM EQUITY FUND","SCBLT4",1051432854.98,10.8523,0.1000000000000,10/07/2015,10.8524,10.8523
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์หุ้นระยะยาวทาร์เก็ต","SCB TARGET LONG TERM EQUITY FUND","SCBLTT",1992659664.37,14.4123,0.1000000000000,12/01/2016,14.4124,14.4123
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์หุ้นระยะยาวปันผล 70/30","SCB DIVIDEND STOCK 70/30 LONG TERM EQUITY FUND","SCBLT1",29254358049.77,15.4453,0.1000000000000,12/01/2016,15.4454,15.4453
+"OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์หุ้นยูเอส","SCB US EQUITY FUND","SCBS&P500",535417202.17,14.0991,0.1500000000000,14/12/2015,14.1887,14.0850
+"OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์หุ้นเกาหลี","SCB KOREA EQUITY FUND","SCBKEQTG",391731166.13,8.4305,,,8.5208,8.4305
+"OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์หุ้นยุโรป","SCB EUROPEAN EQUITY FUND","SCBEUEQ",3253153273.58,10.0065,0.1400000000000,11/08/2015,10.0651,10.0015
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์หุ้นจีน","SCB CHINA EQUITY OPEN END FUND","SCBCE",626767569.81,7.2939,,,7.3779,7.2881
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์หุ้นจีน THB เฮ็ดจ์","SCB CHINA EQUITY THB HEDGE","SCBCEH",2036506641.19,8.6226,,,8.7219,8.6157
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์หุ้นจีน THB เฮ็ดจ์ 2","SCB CHINA EQUITY THB HEDGE 2","SCBCEH2",79522468.49,8.7350,,,8.8356,8.7280
@@ -500,6 +565,7 @@
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์หุ้นทุน Mid/Small Cap","SCB Mid/Small Cap Equity Fund","SCBMSE",369578792.26,10.5303,,,10.6431,10.5303
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์หุ้นทุนเพื่อการเลี้ยงชีพ","SCB EQUITY RMF","SCBRM4",6053806826.83,44.4876,,,44.4877,44.4876
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์หุ้นทุนปันผล","SCB DIVIDEND STOCK OPEN END FUND","SCBDV",4781263322.35,10.6442,0.1000000000000,14/05/2015,10.7012,10.6442
+"OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ออยล์","SCB OIL FUND","SCBOIL",387763638.98,3.2477,,,3.2684,3.2445
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์คุ้มครองเงินต้น เอเชียน ล็อคอิน คอมเพล็กซ์ รีเทิร์น 1","SCB CAPITAL PROTECTED ASIAN LOCK-IN COMPLEX RETURN FUND 1","LOCKIN1",385861680.01,10.0431,,,,
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์คุ้มครองเงินต้น เอเชียน ล็อคอิน คอมเพล็กซ์ รีเทิร์น 2","SCB CAPITAL PROTECTED ASIAN LOCK-IN COMPLEX RETURN FUND 2","LOCKIN2",145245966.26,10.0724,,,,
 "OE"," ","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์ตราสารรัฐตลาดเงิน","SCB TREASURY MONEY OPEN END FUND","SCBTMF",8467882183.82,11.1872,,,11.1873,11.1872
@@ -829,6 +895,7 @@
 "OE"," ","UOBAMTH","ING FUNDS","กองทุนเปิด ตราสารหนี้เอเชียน","Asian USD Bond Fund","ASIA-B",1315971319.51,21.2930,,,21.5060,21.2930
 "OE"," ","UOBAMTH","ING FUNDS","กองทุนเปิด บรรษัทภิบาล หุ้นระยะยาว","Good Corporate Governance Long Term Equity Fund","CG-LTF",5997569377.77,45.7802,,,46.2381,45.7802
 "OE"," ","UOBAMTH","ING FUNDS","กองทุนเปิด บริค 40","BRIC 40 Fund","BRIC",161185123.09,6.1025,,,6.1941,6.1025
+"OE","Alternative Investment Fund(Gold)","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสโกลด์","Asset Plus Gold Fund","ASP-GOLD",151037183.09,12.4038,,,12.4349,12.4038
 "OE","Alternative Investment Fund(Gold)","BBLAM","BBLAM","กองทุนเปิดบัวหลวงโกลด์เพื่อการเลี้ยงชีพ","Bualuang Gold RMF","BGOLDRMF",1092595119.03,10.3960,,,10.3961,10.3960
 "OE","Alternative Investment Fund(Gold)","BBLAM","BBLAM","กองทุนเปิดบัวหลวงโกลด์ฟันด์","Bualuang Gold  Fund","BGOLD",1315137885.93,10.6520,,,10.6648,10.6393
 "OE","Alternative Investment Fund(Gold)","BBLAM","BBLAM","กองทุนเปิดบัวหลวงเชโกลด์อีทีเอฟ","Bualuang CHAY Gold ETF","BCHAY",362421444.51,20.1345,,,,
@@ -842,6 +909,7 @@
 "OE","Alternative Investment Fund(Gold)","MFC","MFC","กองทุนเปิดเอ็มเอฟซี อินเตอร์เนชั่นแนล โกลด์ สปอท 7 ซีรี่ส์ 3","MFC International Gold Spot 7 Fund Series 3","I-GOLD7S3",176443161.14,7.4760,,,7.4761,7.4760
 "OE","Alternative Investment Fund(Gold)","MFC","MFC","กองทุนเปิดเอ็มเอฟซี อินเตอร์เนชั่นแนล โกลด์ ฟันด์","MFC International Gold Fund","I-GOLD",282886562.61,13.1216,,,13.1545,13.1019
 "OE","Alternative Investment Fund(Gold)","ONEAM","ONEAM","กองทุนเปิดวรรณโกลด์ เพื่อการเลี้ยงชีพ","ONE GOLD RETIREMENT MUTUAL FUND","GOLD-RMF",51881674.89,10.3255,,,10.3256,10.2997
+"OE","Alternative Investment Fund(Gold)","PHATRA ASSET","SCI-ASSET","กองทุนเปิดเคเค โกลด์ ทาร์เก็ต 7%#1","KK GOLD TARGET 7% FUND#1","KK GOLD 7%#1",66736919.96,6.8481,,,6.8482,6.8481
 "OE","Alternative Investment Fund(Gold)","PAMC","","กองทุนเปิด ฟิลลิป ทองคำ","Phillip Gold Fund","PGOLD",15224385.18,10.2135,,,10.2471,10.1800
 "OE","Alternative Investment Fund(Gold)","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์โกลด์","SCB GOLD OPEN END FUND","SCBGOLD",210748143.64,7.8033,,,7.8569,7.7916
 "OE","Alternative Investment Fund(Gold)","SCBAM","SCBAM","กองทุนเปิดไทยพาณิชย์โกลด์ THB เฮดจ์","SCB GOLD THB HEDGED OPEN END FUND","SCBGOLDH",1299709129.77,7.2023,,,7.2517,7.1915
@@ -852,6 +920,8 @@
 "OE","Alternative Investment Fund(Gold)","THANACHART FUND","NASSET","กองทุนเปิดธนชาตทองคำแท่งเพื่อการเลี้ยงชีพ-UH","Thanachart Gold Bullion Retirement Mutual Fund-Currency UNhedged","TGoldRMF-UH",54949171.23,8.9013,,,8.9014,8.9013
 "OE","Alternative Investment Fund(Gold)","TISCOASSET","TISCOASSET","กองทุนเปิด ทิสโก้ โกลด์ เพื่อการเลี้ยงชีพ","TISCO Gold Retirement Fund","TGOLDRMF",70480659.89,7.1014,,,7.1015,7.1014
 "OE","Alternative Investment Fund(Gold)","TISCOASSET","TISCOASSET","กองทุนเปิด ทิสโก้ โกลด์ ฟันด์","TISCO Gold Fund","TGOLD",197080360.93,11.0945,,,11.1501,11.0945
+"OE","EQ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสหุ้นไทย","Asset Plus Thai Equity Fund","ASP-THEQ",47763925.94,9.3091,,,9.4023,9.3091
+"OE","EQ","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสตราสารทุนเพื่อการเลี้ยงชีพ","Asset Plus Equity RMF","ASP-ERF",146683406.62,23.4947,,,23.4948,23.4947
 "OE","EQ","CIMB-PRINCIPAL","BTAM","กองทุนเปิดซีไอเอ็มบี-พรินซิเพิล อิควิตี้ ทริกเกอร์ 8 เปอร์เซ็นต์ 3","CIMB-Principal Equity Trigger 8 Percent 3 Fund","CIMB-PRINCIPAL TG8P3",201861261.26,9.1018,,,,9.1018
 "OE","EQ","CIMB-PRINCIPAL","BTAM","กองทุนเปิดซีไอเอ็มบี-พรินซิเพิล ไลฟ์ 70 หุ้นระยะยาวปันผล","CIMB-Principal LIFE 70 Long Term Equity Dividend Fund","CIMB-PRINCIPAL 70LTFD",161057138.14,12.2026,,,12.2027,12.2026
 "OE","EQ","KASSET","K-ASSET","กองทุนเปิดเค เยอรมัน อิควิตี้ ทริกเกอร์ 1","K German Equity Trigger 1 Fund","KGET1",475697330.08,9.8657,,,,
@@ -860,6 +930,7 @@
 "OE","EQ","KTAM","KTAM","กองทุนเปิดกรุงไทยหุ้นระยะยาว","The Krung Thai Long -Term Equity Fund","KTLF",4337703837.25,23.4430,0.4000000000000,29/05/2014,23.4431,23.4430
 "OE","EQ","KTAM","KTAM","กองทุนเปิดกรุงไทยชาริอะฮ์เพื่อการเลี้ยงชีพ","The Krung  Thai Shariah Retirement Mutual Fund","KSRMF",110956321.51,19.9197,,,19.9198,19.9197
 "OE","EQ","KTAM","KTAM","กองทุนเปิดกรุงไทยชาริอะฮ์หุ้นระยะยาว","The Krung Thai Shariah Long-Term Equity Fund","KSLTF",162626073.76,20.0291,,,20.0292,20.0291
+"OE","EQ","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ คอร์ อิควิตี้","Manulife Strength-Core Equity Fund","MS-CORE EQ",35973935.12,26.7564,,,26.8234,26.7564
 "OE","EQ","MFC","MFC","ไทยไพรมฟันด์","THE THAI PRIME FUND","TPF",85299697.25,729.1257,,,,
 "OE","EQ","MFC","MFC","กองทุนเปิดร่วมพัฒนาสอง","Ruam Pattana Two Open-end Fund","RPF2",242728218.05,25.3199,0.6700000000000,14/10/2014,25.4466,25.3199
 "OE","EQ","MFC","MFC","กองทุนเปิดเอ็มเอฟซี เซ็ท 50","MFC SET 50 Fund","M-S50",57636122.39,21.5951,1.1000000000000,18/05/2015,21.6530,21.5373
@@ -900,6 +971,14 @@
 "OE","EQ","UOBAMTH","ING FUNDS","กองทุนเปิด ยูโอบี สมาร์ท แอคทีฟ เซท 100","UOB Smart Active SET 100 Fund","UOBSAS100",226760100.10,29.4622,,,29.6096,29.3149
 "OE","EQ","UOBAMTH","ING FUNDS","กองทุนเปิด ยูโอบี สมาร์ท แอคทีฟ เซท 100 ดิวิเดนด์","UOB Smart Active SET 100 Dividend Fund","UOBSAS100D",216356045.43,12.1427,1.2000000000000,28/11/2014,12.2035,12.1123
 "OE","EQ","UOBAMTH","ING FUNDS","กองทุนเปิด ไทย แวลู โฟกัส อิควิตี้ ปันผล","Thai Value Focus Equity-Dividend Fund","VFOCUS-D",7509649364.90,8.9721,0.1700000000000,27/02/2015,9.0619,8.9721
+"OE","Fixed Income Fund","ASSETFUND","ASSETFUND","แอสเซท พลัส ตราสารหนี้","ASSET PLUS FIXED INCOME FUND","ASP",3960444226.68,15.9548,,,15.9549,15.9548
+"OE","Fixed Income Fund","ASSETFUND","ASSETFUND","กองทุนรวมแอสเซทพลัสตราสารหนี้เพื่อการเลี้ยงชีพ","Asset Plus Fixed RMF","ASP-FRF",53767146.19,14.1317,,,14.1318,14.1317
+"OE","Fixed Income Fund","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสไทยบอนด์","Asset Plus Thai Bond Fund","ASP-THBOND",70905754.96,10.3371,,,10.3372,
+"OE","Fixed Income Fund","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสตราสารหนี้ทวีทรัพย์ 4","Asset Plus Taweesab Fixed Income Fund 4","ASP-TFIXED4",226559444.54,11.9636,,,,
+"OE","Fixed Income Fund","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสตราสารหนี้ทวีทรัพย์ 5","Asset Plus Taweesab Fixed Income Fund  5","ASP-TFIXED5",271543349.04,12.0646,,,,
+"OE","Fixed Income Fund","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสตราสารหนี้ทวีทรัพย์ 8","Asset Plus Taweesab Fixed Income Fund 8","ASP-TFIXED8",188967844.37,12.0932,,,,
+"OE","Fixed Income Fund","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสตราสารหนี้ทวีทรัพย์ 9","Asset Plus Taweesab Fixed Income Fund 9","ASP-TFIXED9",233332189.07,11.4158,,,,
+"OE","Fixed Income Fund","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสทวีเงินออม 2","Asset Plus Money Management  Fund 2","ASP-MMF2",303124006.85,13.9519,,,,
 "OE","Fixed Income Fund","CIMB-PRINCIPAL","BTAM","กองทุนเปิดซีไอเอ็มบี-พรินซิเพิล ตราสารหนี้ รับรายเดือน 3Y1M1","CIMB-Principal Monthly Income 3Y1M1 Fund","CIMB-PRINCIPAL MI3Y1",1433876079.81,11.1911,,,,11.1911
 "OE","Fixed Income Fund","KASSET","K-ASSET","กองทุนเปิดเค เอ็นแฮนซท์ ตราสารหนี้ต่างประเทศ 2 ปี A","K Enhanced Foreign Fixed Income 2 Years A Fund","KEFF2YA",1261567171.38,10.5314,,,,
 "OE","Fixed Income Fund","KASSET","K-ASSET","กองทุนเปิดเค ตราสารหนี้ไทย 3 ปี A","K Thai Fixed Income 3 Year A Fund","KTF3YA",4179555821.76,10.9712,,,,
@@ -937,6 +1016,7 @@
 "OE","Fixed Income Fund","KSAM","AYF","กองทุนเปิดกรุงศรีตราสารหนี้ระยะกลางปันผล","Krungsri Medium Term Fixed Income Dividend Fund","KFMTFI-D",3626079596.79,10.0122,0.1100000000000,11/03/2016,10.0123,10.0122
 "OE","Fixed Income Fund","KSAM","AYF","กองทุนเปิดกรุงศรีพันธบัตรเพื่อการเลี้ยงชีพ","Krungsri Government Bond RMF","KFGOVRMF",3576614408.51,14.1150,,,14.1151,14.1150
 "OE","Fixed Income Fund","LHFUND","","กองทุนเปิด แอล เอช ตราสารหนี้ 3 ปี 1","LH FIXED INCOME FUND 3Y1","LHFI3Y1",337400649.24,10.9078,,,,
+"OE","Fixed Income Fund","MAYBANK","","กองทุนเปิดกิมเอ็งบริหารเงิน","Kim Eng Cash Management Fund","KECASH",568100139.90,11.1485,,,11.1486,11.1485
 "OE","Fixed Income Fund","MFC","MFC","กองทุนเปิดเอ็มเอฟซี สมาร์ท ฟิกซ์ อินคัม","MFC Smart Fixed Income Fund","SMART",3986462906.14,10.1134,0.0897000000000,19/01/2016,10.1135,10.1134
 "OE","Fixed Income Fund","MFC","MFC","กองทุนเปิดเอ็มเอฟซี สเตเบิ้ล อินคัม ฟันด์ 14","MFC Stable Income Fund 14","MSI14",795182110.25,11.1534,,,11.1535,11.1534
 "OE","Fixed Income Fund","MFC","MFC","กองทุนเปิดเอ็มเอฟซี สเตเบิ้ล อินคัม ฟันด์ 15","MFC Stable Income Fund 15","MSI15",376682838.16,10.9447,,,10.9448,10.9447
@@ -1005,6 +1085,9 @@
 "OE","Fixed Income Fund","UOBAMTH","ING FUNDS","กองทุนเปิด ไทย เทรเชอรี","Thai Treasury Fund","TTRY",81670149.32,11.4493,,,11.4494,11.4493
 "OE","Fixed Income Fund","UOBAMTH","ING FUNDS","กองทุนเปิด ไทย ตราสารหนี้","Thai Fixed Income Fund","TFIF",2824748176.48,15.0887,,,15.0888,15.0887
 "OE","Fixed Income Fund","UOBAMTH","ING FUNDS","กองทุนเปิด พันธบัตรเพื่อการเลี้ยงชีพ","Government Bond Retirement Mutual Fund","GBRMF",253551016.90,13.8381,,,13.8382,13.8381
+"OE","Mix","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสหุ้นผสมตราสารหนี้เพื่อการเลี้ยงชีพ","Asset Plus Mixed RMF","ASP-MRF",217846176.19,22.6742,,,22.6743,22.6742
+"OE","Mix","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสทริกเกอร์ 4/4","Asset Plus Trigger 4/4 Fund","ASP-TRIGGER4/4",39481210.72,8.0492,,,8.0493,8.0492
+"OE","Mix","ASSETFUND","ASSETFUND","กองทุนเปิดแอสเซทพลัสทริกเกอร์ 5%","Asset Plus Trigger 5% Fund","ASP-TRIGGER5",40235175.11,7.9838,,,,7.9838
 "OE","Mix","BBLAM","BBLAM","กองทุนเปิดบัวหลวงเฟล็กซิเบิ้ลเพื่อการเลี้ยงชีพ","Bualuang Flexible RMF","BFLRMF",13665789321.05,53.0856,,,53.0857,53.0856
 "OE","Mix","BBLAM","BBLAM","กองทุนเปิดบัวหลวงหุ้น 25% เพื่อการเลี้ยงชีพ","Bualuang Equity 25% RMF","B25RMF",3143077162.24,14.1270,,,14.1271,14.1270
 "OE","Mix","BBLAM","BBLAM","กองทุนเปิดบีแอ็คทีฟ","ฺB-active Open-end Fund","B-ACTIVE",445862130.50,21.1334,,,21.1335,20.9221
@@ -1049,6 +1132,8 @@
 "OE","Mix","KSAM","AYF","กองทุนเปิดกรุงศรีทุนทวี 2","Krungsri Tuntawee Fund 2","KFTW2",623926824.93,56.9990,,,56.9991,55.8590
 "OE","Mix","LHFUND","","กองทุนเปิด แอล เอช เฟล็กซิเบิ้ล","LH FLEXIBLE FUND","LHFL",91484243.87,8.0392,,,8.1197,8.0392
 "OE","Mix","LHFUND","","กองทุนเปิด แอล เอช เฟล็กซิเบิ้ลเพื่อการเลี้ยงชีพ","LH FLEXIBLE RMF","LHFLRMF",12410133.09,11.0537,,,11.0538,11.0537
+"OE","Mix","MANULIFEAM","","กองทุนเปิด แมนูไลฟ์ สเตร็งค์ เฟล็กซิเบิ้ลฟันด์ เพื่อการเลี้ยงชีพ","Manulife Strength-Flexible Retirement Mutual Fund","MS-FLEX RMF",29700792.64,18.8397,,,18.8398,18.8397
+"OE","Mix","MAYBANK","","กองทุนเปิดเมย์แบงก์ โกลบอล แอบโซลูท รีเทิร์น","Maybank Global Absolute Return Fund","M-GARS",294339056.35,9.5245,,,9.6265,9.5245
 "OE","Mix","MFC","MFC","กองทุนรวมวายุภักษ์ หนึ่ง","Vayupak Fund 1","VAYU1",264111924565.74,36.0286,0.5000000000000,03/11/2015,36.0287,36.0286
 "OE","Mix","MFC","MFC","กองทุนเปิด คอร์ เฟล็กซิเบิล ฟันด์","Core Flexible Fund","CORE",852006091.42,6.1696,,,6.1697,6.1696
 "OE","Mix","MFC","MFC","กองทุนเปิดเอ็มเอฟซี แฮปปี้ ดี ไฟฟ์ ฟันด์","MFC  Happy Dee Five Fund","HAPPY D5",8515488.92,8.1844,1.3500000000000,15/01/2015,8.2050,8.1844

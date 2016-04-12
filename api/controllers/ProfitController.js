@@ -6,10 +6,6 @@
  */
 
 module.exports = {
-  getCurrentSummary : function (req, res){
-    Port.getSummary(function(err, summary){
-      return res.json(summary);
-    })
-  }
+
 };
 
