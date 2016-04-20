@@ -423,7 +423,7 @@ function updateSideNavList(){
       cash : 0
     }
     data.forEach(function(item){
-      if (item.volume == 0){
+      if (item.volume <= 0){
         portInfo.sold++;
       }else{
         portInfo.inPort++;
@@ -433,21 +433,21 @@ function updateSideNavList(){
         else{
           portInfo.loss++;
         }
+        switch (item.type.toLowerCase()){
+          case 'stock':
+            portInfo.stock++;
+            break;
+          case 'fund':
+            portInfo.fund++;
+            break;
+          case 'cash' :
+            portInfo.cash++;
+            break;
+          default:
+            break;
+        }
       }
-      switch (item.type.toLowerCase()){
-        case 'stock':
-          portInfo.stock++;
-          break;
-        case 'fund':
-          portInfo.fund++;
-          break;
-        case 'cash' :
-          portInfo.cash++;
-          break;
-        default:
-          break;
 
-      }
     })
 
     $('#side-nav-sold').find('.badge').text(portInfo.sold);

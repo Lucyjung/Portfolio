@@ -53,7 +53,7 @@ module.exports = {
         query = {name : req.query.name || null};
         break;
       case 'type':
-        query = {type : req.query.type || null};
+        query = {type : req.query.type || null,volume : {'>' : 0} };
         break;
       default:
         break;
