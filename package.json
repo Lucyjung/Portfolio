@@ -8,7 +8,6 @@
     "async": "^2.0.0-rc.1",
     "ejs": "2.3.4",
     "fast-csv": "^1.0.0",
-    "google-stocks": "^0.2.0",
     "grunt": "0.4.5",
     "grunt-contrib-clean": "0.6.0",
     "grunt-contrib-coffee": "0.13.0",
@@ -28,7 +27,8 @@
     "sails": "~0.12.1",
     "sails-disk": "~0.10.9",
     "sails-hook-autoreload": "^0.13.1",
-    "sails-mongo": "^0.12.0"
+    "sails-mongo": "^0.12.0",
+    "yahoo-finance": "^0.3.5"
   },
   "scripts": {
     "debug": "node debug app.js",

@@ -231,10 +231,12 @@ function updatePortTable(option){
       } else if (data[i].cost > data[i].marketValue) {
         tr = '<tr class="danger">'
       }
+      if (!data[i].lastPrice){
+        data[i].lastPrice = 0;
+      }
 
       var percentage = data[i].volume > 0 ? (data[i].lastPrice - data[i].averagedPrice)/data[i].averagedPrice*100:0;
       percentage = percentage.toFixed(2);
-
       $('#table-port > tbody:last-child').append('' +
         tr +
         '<td>' + order + '</td>' +
